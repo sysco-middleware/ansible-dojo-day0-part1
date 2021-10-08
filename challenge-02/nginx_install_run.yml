@@ -1,6 +1,10 @@
 ---
 - hosts: localhost
   tasks:
+    - name: Update apt-get catalog
+      apt:
+        update_cache: true
+      ignore_errors: True
     - name: Install nginx to latest version
       apt:
         name: nginx
@@ -9,3 +13,4 @@
       service:
         name: nginx
         state: started
+
