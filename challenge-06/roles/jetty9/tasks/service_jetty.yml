@@ -1,0 +1,5 @@
+     - name: start jetty9
+       service:
+         name: jetty9
+         state: started
+       tags: start_jetty

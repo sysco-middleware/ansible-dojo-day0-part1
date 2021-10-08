@@ -1,0 +1,8 @@
+---
+    - name: Start Apache2 servive
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+      tags:
+        - start_apache2

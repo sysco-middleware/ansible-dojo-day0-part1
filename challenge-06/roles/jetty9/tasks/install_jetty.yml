@@ -1,0 +1,5 @@
+     - name: installing the jetty9 webserver
+       apt:
+         name: jetty9
+         state: latest
+       tags: install_jetty

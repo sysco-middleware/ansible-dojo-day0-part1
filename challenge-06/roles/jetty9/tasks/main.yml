@@ -1,0 +1,4 @@
+---
+# tasks file for jetty9
+- include_tasks: install_jetty.yml
+- include_tasks: service_jetty.yml

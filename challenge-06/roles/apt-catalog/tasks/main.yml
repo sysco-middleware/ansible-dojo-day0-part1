@@ -1,0 +1,3 @@
+---
+# tasks file for apt-catalog
+- include_tasks: apt-catalog.yml
