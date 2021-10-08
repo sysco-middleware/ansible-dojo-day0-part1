@@ -5,6 +5,7 @@
   tasks:
    - name: update apt-get 
      apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+     ignore_errors: true
 
    - name: install tomcat9
      apt: name=tomcat9 state=latest
