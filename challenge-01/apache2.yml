@@ -2,6 +2,11 @@
 - name: Install and configure Apache2
   hosts: localhost
   tasks:
+    - name: Update apt-get catalog
+      apt:
+        update_cache: true
+      ignore_errors: True
+
     - name: Install Apache2 on Ubuntu
       apt:
         name: apache2
