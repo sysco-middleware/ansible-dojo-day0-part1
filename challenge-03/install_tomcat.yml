@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  become: true
+
+  tasks:
+   - name: install tomcat9
+     apt: name=tomcat9 state=latest
+
+   - name: create document root
+     file: 
+       path: "/var/www/dojo"
+       state: directory
+       mode: '0755'
+
+   - name: copy index file    
+     template:
+       src: "/root/ansible-dojo-day0-part1/challenge-03/index.html"
+       dest: "/var/www/dojo/index.html"
