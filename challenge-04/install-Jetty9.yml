@@ -1,0 +1,23 @@
+---
+
+- name: Install jetty9 webserver
+  hosts: localhost
+  
+  tasks:
+     
+     - name: Update apt-get catalog
+       apt: 
+          update_cache: true
+          cache_valid_time: 3600
+          force_apt_get: true
+       ignore_errors: yes
+     
+     - name: installing the jetty9 webserver
+       apt:
+         name: jetty9
+         state: latest
+
+     - name: start jetty9
+       service:
+         name: jetty9
+         state: started
