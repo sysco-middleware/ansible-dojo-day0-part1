@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  tasks:
+   - name: Install Lighttpd Server
+     apt: 
+      name: lighttpd
+      state: latest
+      update_cache: yes
+      force_apt_get: yes
+      cache_valid_time: 3600
+     ignore_errors: yes
+     become: yes
+   - name: index.html
+     copy:
+        content: "Successfully instaled Lighttpd"
+        dest: /var/www/html/index.html
+   - name: restart
+     service:
+         name: lighttpd
+         state: restarted
+...
+
