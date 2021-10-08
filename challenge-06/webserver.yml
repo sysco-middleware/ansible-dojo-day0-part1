@@ -1,0 +1,13 @@
+- name: Install & configure Webserver
+  hosts: localhost
+  roles:
+    - role: roles/nginx
+      tags: [ nginx ]
+    - role: roles/apache2
+      tags: [ apache ]
+    - role: roles/tomcat9
+      tags: [ tomcat ]
+    - role: roles/jetty9
+      tags: [ jetty ]
+    - role: roles/lighttpd
+      tags: [ lighttpd ]

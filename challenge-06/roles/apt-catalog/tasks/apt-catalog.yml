@@ -1,0 +1,7 @@
+---
+    - name: Update apt-get catalog
+      apt:
+        update_cache: true
+      ignore_errors: True
+      tags: apt_update,ubuntu,debian
+

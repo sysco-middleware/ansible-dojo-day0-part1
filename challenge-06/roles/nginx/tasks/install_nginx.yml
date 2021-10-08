@@ -1,0 +1,7 @@
+---
+    - name: Install nginx to latest version
+      apt:
+        name: nginx
+        state: latest
+      tags:
+        - install_nginx
