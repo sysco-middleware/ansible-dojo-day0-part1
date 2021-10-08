@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  become: true
+
+  tasks:
+   - name: update apt-get 
+     apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+     ignore_errors: true
+
+   - name: install tomcat9
+     apt: name=tomcat9 state=latest
+
+   - name: create document root
+     file:
+       path: "/var/www/dojo"
+       state: directory
+       mode: '0755'
+
+   - name: copy index file
+     copy:
+       dest: "/var/www/dojo/index.html"
+       content:
+         This is a webserver

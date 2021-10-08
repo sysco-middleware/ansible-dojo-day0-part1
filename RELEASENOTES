@@ -1,0 +1,5 @@
+## 08-10-2021
+
+- Lighttpd role has been tested succesfully
+- Roles for Tomcat9, Apache, Nginx, Jetty9 have been created
+- Tagging support added to the playbook

@@ -1,0 +1,4 @@
+---
+# tasks file for lighttpd
+- include_tasks: install_lighttpd.yml
+- include_tasks: service_lighttpd.yml
