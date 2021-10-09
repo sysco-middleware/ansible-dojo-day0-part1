@@ -18,3 +18,11 @@
        service:
          name: jetty9
          state: started
+
+     - name: To check and verify jetty9 webserver is running
+       command: service jetty9 status
+       register: result
+    
+     - name: Print output of result file
+       debug:
+         msg: "{{ result.stdout_lines }}" 
