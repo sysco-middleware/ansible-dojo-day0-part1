@@ -1,7 +1,5 @@
 ---
-    - name: Install nginx to latest version
+    - name: Install nginx on Ubuntu
       apt:
         name: nginx
         state: latest
-      tags:
-        - install_nginx

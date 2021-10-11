@@ -1,6 +1,5 @@
 ---
-   - name: Install Lighttpd server
+   - name: Install Lighttpd service
      apt:
        name: lighttpd
        state: latest
-     tags: install_lighttpd

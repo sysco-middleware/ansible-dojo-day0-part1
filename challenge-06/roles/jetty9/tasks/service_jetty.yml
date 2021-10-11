@@ -1,5 +1,6 @@
-     - name: start jetty9
+---
+     - name: Start jetty9 service
        service:
          name: jetty9
          state: started
-       tags: start_jetty
+         enabled: yes

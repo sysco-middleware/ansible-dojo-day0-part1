@@ -1,6 +1,6 @@
 ---
-    - name: Start nginx
+    - name: Start nginx service
       service:
         name: nginx
         state: started
-      tags: start_nginx
+        enabled: yes
