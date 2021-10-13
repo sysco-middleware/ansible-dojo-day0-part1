@@ -1,5 +1,5 @@
-     - name: installing the jetty9 webserver
+---
+     - name: Install Jetty9 on Ubuntu
        apt:
          name: jetty9
          state: latest
-       tags: install_jetty

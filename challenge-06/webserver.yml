@@ -1,5 +1,5 @@
 - name: Install & configure Webserver
-  hosts: localhost
+  hosts: ubuntu
   roles:
     - role: roles/nginx
       tags: [ nginx ]

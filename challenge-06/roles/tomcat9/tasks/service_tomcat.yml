@@ -1,6 +1,6 @@
 ---
-    - name: Start Apache2 service
+    - name: Start Tomcat9 servive
       service:
-        name: apache2
+        name: tomcat9
         state: started
         enabled: yes
