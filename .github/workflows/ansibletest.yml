@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Play Ansible Playbook
-        run: ansible-playbook -i -b env/local_ubuntu webserver.yml --tags=nginx,apache -vvv
+        run: ansible-playbook -b -i env/local_ubuntu webserver.yml --tags=nginx,apache -vvv
         working-directory: challenge-06

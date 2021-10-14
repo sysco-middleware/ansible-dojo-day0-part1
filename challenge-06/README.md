@@ -19,3 +19,5 @@ dockertest.sh supports testing by using a docker container (ansible-tester) as t
 ## Vagrant
 
 ## Testing the playbook
+
+This can be tested...
