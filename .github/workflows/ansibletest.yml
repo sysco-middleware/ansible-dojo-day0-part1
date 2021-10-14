@@ -12,8 +12,8 @@ jobs:
       - name: Play Ansible Playbook
         uses: arillso/action.playbook@master
         with:
-          playbook: webserver.yml
-          inventory: env/local_ubuntu
+          playbook: challenge-06/webserver.yml
+          inventory: challenge-06/env/local_ubuntu
           tags: nginx, apache
         env:
           ANSIBLE_HOST_KEY_CHECKING: 'false'
