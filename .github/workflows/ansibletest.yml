@@ -9,12 +9,14 @@ jobs:
   RUN_PLAYBOOK:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Play Ansible Playbook
         uses: arillso/action.playbook@master
         with:
           playbook: challenge-06/webserver.yml
           inventory: challenge-06/env/local_ubuntu
           tags: nginx, apache
+          verbose: 4
         env:
           ANSIBLE_HOST_KEY_CHECKING: 'false'
           ANSIBLE_DEPRECATION_WARNINGS: 'false'

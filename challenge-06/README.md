@@ -13,3 +13,7 @@ Tags: nginx, apache, httpd, lighttpd, jetty
 ## Docker
 
 dockertest.sh supports testing by using a docker container (ansible-tester) as the target host
+
+## Docker Compose
+
+## Vagrant
