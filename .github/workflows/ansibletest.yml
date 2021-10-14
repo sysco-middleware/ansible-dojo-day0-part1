@@ -1,0 +1,20 @@
+name: Ansible Test
+on:
+  pull_request:
+    branches:
+      - dojo-day1
+    paths:
+      - challenge-06/**
+jobs:
+  RUN_PLAYBOOK:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Play Ansible Playbook
+        uses: arillso/action.playbook@master
+        with:
+          playbook: webserver.yml
+          inventory: env/local_ubuntu
+          tags: nginx, apache
+        env:
+          ANSIBLE_HOST_KEY_CHECKING: 'false'
+          ANSIBLE_DEPRECATION_WARNINGS: 'false'
