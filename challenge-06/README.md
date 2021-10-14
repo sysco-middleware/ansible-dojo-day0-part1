@@ -18,4 +18,4 @@ dockertest.sh supports testing by using a docker container (ansible-tester) as t
 
 ## Vagrant
 
-## Testing
+## Testing the playbook
