@@ -2,5 +2,5 @@
    - name: restart
      service: 
        name: lighttpd
-       state: restarted
-     tags: start_lighttpd
+       state: started
+       enabled: yes

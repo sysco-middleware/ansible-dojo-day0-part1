@@ -1,0 +1,5 @@
+---
+    - name: Install Tomcat9 on Ubuntu
+      apt:
+        name: tomcat9
+        state: latest

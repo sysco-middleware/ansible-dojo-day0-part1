@@ -3,6 +3,3 @@
       apt:
         name: apache2
         state: latest
-      ignore_errors: True
-      tags:
-        - install_apache2
