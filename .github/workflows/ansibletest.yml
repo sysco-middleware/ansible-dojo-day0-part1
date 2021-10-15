@@ -2,7 +2,7 @@ name: Ansible Test
 on:
   pull_request:
     branches:
-      - dojo-day1
+      - develop
     paths:
       - challenge-06/**
 jobs:
